@@ -7,7 +7,7 @@ on:
 env:
   AWS_REGION: us-east-2
   ECR_REPOSITORY: algorithm
-  ECS_SERVICE: arn:aws:ecs:us-east-2:074002766010:cluster/algorithm
+  ECS_SERVICE: algorithm
   ECS_CLUSTER: algorithm
   ECS_TASK_DEFINITION: .github/task.json
   CONTAINER_NAME: algorithm
