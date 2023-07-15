@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:074002766010:task-definition/algorithm:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:074002766010:task-definition/algorithm:2",
     "containerDefinitions": [
         {
             "name": "algorithm",
-            "image": "074002766010.dkr.ecr.us-east-2.amazonaws.com/algorithm:latest",
+            "image": "463800430537.dkr.ecr.us-east-2.amazonaws.com/algorithm:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -25,7 +25,7 @@
     "family": "algorithm",
     "executionRoleArn": "arn:aws:iam::074002766010:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -44,18 +44,19 @@
     ],
     "placementConstraints": [],
     "compatibilities": [
-        "EC2"
+        "EC2",
+        "FARGATE"
     ],
     "requiresCompatibilities": [
         "EC2"
     ],
-    "cpu": "1024",
-    "memory": "1024",
+    "cpu": "256",
+    "memory": "512",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-15T09:32:39.889Z",
+    "registeredAt": "2023-07-15T10:40:01.758Z",
     "registeredBy": "arn:aws:iam::074002766010:root",
     "tags": []
 }
