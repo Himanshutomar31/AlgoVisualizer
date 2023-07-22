@@ -1,5 +1,8 @@
 FROM python:3.9
 
+# Upgrade pip to the latest version
+RUN python -m pip install --upgrade pip
+
 WORKDIR /app
 
 COPY requirements.txt .
