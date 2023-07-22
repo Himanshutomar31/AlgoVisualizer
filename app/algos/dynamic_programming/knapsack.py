@@ -15,7 +15,7 @@ def knapsack(wt, val, W, n):
 		return t[n][W]
 
 # Driver code
-if __name__ == '__main__':
+def main():
 	profit = [60, 100, 120]
 	weight = [10, 20, 30]
 	W = 50
