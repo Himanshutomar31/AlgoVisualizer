@@ -14,6 +14,8 @@ def knapsack(wt, val, W, n, t):
         return t[n][W]
 
 # Driver code
+
+
 def main():
     profit = [60, 100, 120]
     weight = [10, 20, 30]
@@ -21,7 +23,4 @@ def main():
     n = len(profit)
 
     t = [[-1 for i in range(W + 1)] for j in range(n + 1)]
-    print(knapsack(weight, profit, W, n, t))
-
-if __name__ == "__main__":
-    main()
+    return knapsack(weight, profit, W, n, t)

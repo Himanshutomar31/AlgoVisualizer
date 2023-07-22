@@ -26,7 +26,8 @@ def printJobScheduling(arr, t):
                 break
 
     # Return the sequence of jobs for maximum profit
-    return max_profit_sequence 
+    return max_profit_sequence
+
 
 def main():
     # Example job list: [Job ID, Deadline, Profit]
@@ -41,11 +42,11 @@ def main():
 
     # Check if the sequence is empty or not
     if not max_profit_sequence:
-        print("No jobs scheduled.")
+        return "No jobs scheduled."
     else:
         # Print the header and the sequence of jobs for maximum profit
         print("Following is the maximum profit sequence of jobs:")
-        print(max_profit_sequence)
+        return max_profit_sequence
 
 # if __name__ == "__main__":
 #     main()
