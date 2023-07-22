@@ -6,12 +6,12 @@ on:
 
 env:
   AWS_REGION: us-east-2
-  ECR_REPOSITORY: algorithm
+  ECR_REPOSITORY: 463800430537.dkr.ecr.us-east-2.amazonaws.com/algorithm
   ECS_SERVICE: arn:aws:ecs:us-east-2:074002766010:service/algorithm/algorithm
   ECS_CLUSTER: algorithm
   ECS_TASK_DEFINITION: .github/task.json
   CONTAINER_NAME: algorithm
-  IMAGE_TAG: final
+  IMAGE_TAG: latest
 
 permissions:
   contents: read
