@@ -11,7 +11,7 @@ env:
   ECS_CLUSTER: algorithm
   ECS_TASK_DEFINITION: .github/task.json
   CONTAINER_NAME: algorithm
-  IMAGE_TAG: latest
+  IMAGE_TAG: final
 
 permissions:
   contents: read
